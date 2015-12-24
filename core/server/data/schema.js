@@ -30,7 +30,7 @@ var db = {
             email: {type: 'string', maxlength: 254, nullable: false, unique: true, validations: {isEmail: true}},
             image: {type: 'text', maxlength: 2000, nullable: true},
             cover: {type: 'text', maxlength: 2000, nullable: true},
-            bio: {type: 'string', maxlength: 200, nullable: true},
+            bio: {type: 'string', maxlength: 2000, nullable: true},
             website: {type: 'text', maxlength: 2000, nullable: true, validations: {isEmptyOrURL: true}},
             location: {type: 'text', maxlength: 65535, nullable: true},
             accessibility: {type: 'text', maxlength: 65535, nullable: true},
