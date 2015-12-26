@@ -286,7 +286,8 @@ var _              = require('lodash'),
                 ember: {
                     cmd: emberPath + ' build --watch',
                     execOpts: {
-                        cwd: path.resolve(cwd + '/core/client/')
+                        cwd: path.resolve(cwd + '/core/client/'),
+                        maxBuffer: false
                     },
                     bg: true,
                     stdout: function (out) {
